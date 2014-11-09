@@ -28,16 +28,65 @@ body {
 .post.active {
 	z-index: 45;
 	-webkit-transform: translate3d( 0, 0, 0 );
+	border: 2px solid red;
 }
 
 .post.before {
 	-webkit-transform: translate3d( 0, -100%, 0 );
 	z-index: 40;
 	opacity: .75;
+	border: 2px solid red;
 }
 
 .post.after {
 	-webkit-transform: translate3d( 0, 100%, 0 );
 	z-index: 40;
 	opacity: .75;
+	border: 2px solid red;
+}
+
+.animate .post {
+	-webkit-transition: all .25s ease;
+	-webkit-backface-visibility: hidden;
+	-webkit-perspective: 1000;
+}
+
+.dragdown-reset .active {
+	-webkit-transform: translate3d( 0, 0, 0 ) !important;
+}
+.dragdown-reset .before {
+	-webkit-transform: translate3d( 0, -100%, 0 ) !important;
+}
+
+.dragdown-complete .active {
+	-webkit-transform: translate3d( 0, 100%, 0 ) !important;
+}
+.dragdown-complete .before {
+	-webkit-transform: translate3d( 0, 0, 0 ) !important;
+	opacity: 1 !important;
+}
+
+.dragdown-refresh .active {
+	-webkit-transform: translate3d( 0, 50px, 0 ) !important;
+}
+.dragdown-refresh .ptr {
+	-webkit-transition: all .25s ease;
+	-webkit-backface-visibility: hidden;
+	-webkit-perspective: 1000;
+	-webkit-transform: translate3d( 0, 20px, 0 ) !important;
+}
+
+.dragup-reset .active {
+	-webkit-transform: translate3d( 0, 0, 0 ) !important;
+}
+.dragup-reset .after {
+	-webkit-transform: translate3d( 0, 100%, 0 ) !important;
+} 
+
+.dragup-complete .active {
+	-webkit-transform: translate3d( 0, -100%, 0 ) !important;
+}
+.dragup-complete .after {
+	-webkit-transform: translate3d( 0, 0, 0 ) !important;
+	opacity: 1 !important;
 }
