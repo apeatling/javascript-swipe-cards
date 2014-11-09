@@ -6,6 +6,7 @@ body {
 	background: #222;
 	margin: 0;
 	overflow: hidden;
+	overflow-y: hidden;
 }
 
 .post {
@@ -21,6 +22,18 @@ body {
 	overflow: hidden;
 }
 
+#one {
+	background: red;
+}
+
+#two {
+	background: green;
+}
+
+#three {
+	background: blue;
+}
+
 .post.before, .post.active, .post.after {
 	display: block;
 }
@@ -28,21 +41,18 @@ body {
 .post.active {
 	z-index: 45;
 	-webkit-transform: translate3d( 0, 0, 0 );
-	border: 2px solid red;
 }
 
 .post.before {
 	-webkit-transform: translate3d( 0, -100%, 0 );
 	z-index: 40;
 	opacity: .75;
-	border: 2px solid red;
 }
 
 .post.after {
 	-webkit-transform: translate3d( 0, 100%, 0 );
 	z-index: 40;
 	opacity: .75;
-	border: 2px solid red;
 }
 
 .animate .post {
