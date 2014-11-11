@@ -9,4 +9,4 @@ Since this is a proof of concept, it's only limited to three cards. I plan on it
 
 This kind of interaction would work well for a news reader (a la Flipboard), or multiple screens of related content.
 
-[Try a Demo](http://apeatling.com/demos/js-swipe-cards/) | [Read the Blog Post](http://apeatling.com/2014/javascript-swipe-cards/)
+[Try a Demo](http://apeatling.com/demos/js-swipe-cards/) | [Read the Blog Post](http://apeatling.com/2014/javascript-swipe-cards-ux/)
