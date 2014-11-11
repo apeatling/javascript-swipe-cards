@@ -7,6 +7,9 @@ body {
 	margin: 0;
 	overflow: hidden;
 	overflow-y: hidden;
+
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 38px;
 }
 
 .post {
@@ -20,18 +23,27 @@ body {
 	display: none;
 	background: #fff;
 	overflow: hidden;
+	color: #fff;
+	font-weight: 100;
+}
+
+.post p {
+	position: relative;
+	top: 30%;
+	text-align: center;
 }
 
 #one {
-	background: red;
+	background: #74CEB7;
+	color: #004056;
 }
 
 #two {
-	background: green;
+	background: #004056;
 }
 
 #three {
-	background: blue;
+	background: #2C858D;
 }
 
 .post.before, .post.active, .post.after {
